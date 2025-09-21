@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+#warning {
+  color: rgb(15, 15, 15);
+  padding: 15px;
+}
+
+body {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.container {
+  background-color: coral;
+  width: 500px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.heading {
+  font-size: 28px;
+}
+.word {
+  width: 100%;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+button {
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+.translatedDiv {
+  display: none;
+}
+.dark-theme {
+  background-color: #121212;
+  color: white;
+  transition: all 0.9s ease;
+
+}
+.light-theme {
+  background-color: burlywood;
+  color: black;
+  transition: all 0.5s ease;
+}
+
+.theme-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: coral;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  color: black;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .word {
+    padding: 8px 15px;
+  }
+  button {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .translatedDiv {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.4;
+    max-height: 200px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    display: none;
+  }
+}
