@@ -54,13 +54,18 @@ button {
 .dark-theme {
   background-color: #121212;
   color: white;
-  transition: all 0.9s ease;
-
 }
 .light-theme {
-  background-color: burlywood;
+  background-color: rgb(63, 53, 72);
+  color: white;
+}
+.dark-theme button {
+  background-color: black;
+  color: white;
+}
+.light-theme button {
+  background-color: white;
   color: black;
-  transition: all 0.5s ease;
 }
 
 .theme-button {
@@ -89,6 +94,9 @@ button {
   button {
     padding: 8px;
     font-size: 13px;
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 100px;
   }
   .translatedDiv {
     font-size: 14px;

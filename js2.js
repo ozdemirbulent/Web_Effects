@@ -113,7 +113,6 @@ function advancedRain() {
   const drops = [];
   const splashes = [];
 
- 
   class RainDrop {
     constructor() {
       this.reset();
@@ -156,13 +155,11 @@ function advancedRain() {
 
       this.updateElement();
 
- 
       if (this.y > window.innerHeight - 5) {
         this.createSplash();
         this.reset();
       }
 
-     
       if (this.x < -10 || this.x > window.innerWidth + 10) {
         this.reset();
       }
@@ -190,7 +187,6 @@ function advancedRain() {
     }
 
     createElement() {
-    
       const particleCount = Math.floor(Math.random() * 3) + 3;
 
       for (let i = 0; i < particleCount; i++) {
@@ -262,8 +258,6 @@ function advancedRain() {
   }
 
   animate();
-
- 
 }
 
 // EMOJI YAĞMURU
@@ -335,8 +329,6 @@ function emojiRain() {
   }
 
   animate();
-
-
 }
 
 // METİN YAĞMURU
@@ -405,11 +397,8 @@ function textRain(text = "JAVASCRIPT") {
   }
 
   animate();
-
 }
 startRain();
 //advancedRain();
 //emojiRain();
 //textRain("CODE");
-
-
